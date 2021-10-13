@@ -125,3 +125,10 @@ img {
 .news-list {
   list-style: none;
 }
+
+/* Gallery */
+
+.gallery-content {
+  background-color: var(--basic-dark);
+  border: 7px solid var(--basic-white);
+}
