@@ -175,3 +175,32 @@ img {
 .appointment-item input:focus {
   border-color: var(--special);
 }
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-white);
+  background-color: var(--basic-extra-dark);
+}
+
+.footer-contacts a {
+  color: var(--basic-white);
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+}
