@@ -182,6 +182,18 @@ img {
   border-color: var(--special);
 }
 
+/* Inner page */
+
+.inner-page {
+  color: var(--basic-black);
+  background-color: var(--basic-extra-light);
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
 /* Main footer */
 
 .main-footer {
