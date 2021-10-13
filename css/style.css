@@ -104,3 +104,19 @@ img {
   font-size: 30px;
   line-height: 42px;
 }
+
+/* Index columns */
+
+.index-columns {
+  color: var(--basic-black);
+
+  background-color: var(--basic-extra-light);
+  background-image: url("../img/shape.png");
+  background-repeat: no-repeat, repeat;
+  background-position: center, 0 0;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
