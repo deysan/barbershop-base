@@ -55,6 +55,31 @@ img {
   height: auto;
 }
 
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--special);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-black);
+}
+
 /* Main header */
 
 .inner-page .main-header {
@@ -139,31 +164,6 @@ img {
   border: 7px solid var(--basic-white);
 }
 
-/* Button */
-
-.button {
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: var(--basic-black);
-  border: none;
-}
-
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: var(--special);
-}
-
-.button.disabled,
-.button:disabled {
-  cursor: default;
-  opacity: 0.5;
-  background-color: var(--basic-black);
-}
-
 /* Contacts */
 
 .contacts-phone {
@@ -187,6 +187,7 @@ img {
 .inner-page {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
+  background-image: none;
 }
 
 .page-title {
