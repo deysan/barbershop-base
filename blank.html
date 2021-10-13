@@ -1,83 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Пустая страница — Барбершоп "Бородинский"</title>
+  <meta charset="UTF-8">
+  <title>Пустая страница — Барбершоп "Бородинский"</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/vector.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
-<header>
-    <nav>
-        <a href="index.html">
-            <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
-        </a>
-        <ul>
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Новости</a></li>
-            <li><a href="price.html">Прайс-лист</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+<body class="page-body inner-page">
+
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo" href="index.html">
+      <img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+    </a>
+    <div class="main-navigation-wrapper">
+      <div class="container">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="price.html">Прайс-лист</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <a href="blank.html">Вход</a>
-    </nav>
+        <div class="user-navigation">
+          <a class="login-link" href="blank.html">Вход</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
 
-<main>
-    <div>
-        <h1>Пустая страница</h1>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li>Пустая</li>
-        </ul>
-    </div>
+<main class="page-blank container">
+  <div>
+    <h1 class="page-title">Пустая страница</h1>
+    <ul class="breadcrumbs">
+      <li><a href="index.html">Главная</a></li>
+      <li class="breadcrumbs-current">Пустая</li>
+    </ul>
+  </div>
 </main>
 
-<footer>
-    <section>
-        <h2>Как нас найти</h2>
-        <p>
-            Барбершоп "Бородинский"<br>
-            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-            <a href="contacts.html">Как нас найти?</a><br>
-            Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a>
-        </p>
-    </section>
+<footer class="main-footer">
+  <section class="footer-contacts">
+    <h2>Как нас найти</h2>
+    <p>
+      Барбершоп "Бородинский"<br>
+      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      <a class="footer-address" href="contacts.html">Как нас найти?</a><br>
+      Телефон: <a class="footer-phone" href="tel:+78126660266">+7 (812) 666-02-66</a>
+    </p>
+  </section>
 
-    <section>
-        <h2>Давайте дружить!</h2>
-        <ul>
-            <li><a href="#">Вконтакте</a></li>
-            <li><a href="#">Фейсбук</a></li>
-            <li><a href="#">Инстаграм</a></li>
-        </ul>
-    </section>
+  <section class="footer-social">
+    <h2>Давайте дружить!</h2>
+    <ul>
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+    </ul>
+  </section>
 
-    <section>
-        <p>
-            Разработано:
-            <a href="https://htmlacademy.ru/profile/deysan/certificates">HTML Academy</a>
-        </p>
-    </section>
+  <section class="footer-copyright">
+    <p>
+      Разработано:
+      <a class="button" href="https://htmlacademy.ru/profile/deysan/certificates">HTML Academy</a>
+    </p>
+  </section>
 </footer>
 
-<section>
-    <h2>Личный кабинет</h2>
-    <p>Введите, пожалуйста, свой логин и пароль</p>
-    <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-            <label for="login">Логин</label>
-            <input id="login" type="email" name="login" placeholder="email@example.com">
-        </div>
-        <div>
-            <label for="password">Пароль</label>
-            <input id="password" type="password" name="password" placeholder="********">
-        </div>
-        <div>
-            <label><input type="checkbox" name="remember">Запомните меня</label>
-            <a href="blank.html">Я забыл пароль!</a>
-        </div>
-        <button type="submit">Войти</button>
-    </form>
-    <button type="button">Закрыть</button>
+<section class="modal modal-login">
+  <h2>Личный кабинет</h2>
+  <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <div>
+      <label for="login">Логин</label>
+      <input class="login-icon-user" id="login" type="email" name="login" placeholder="email@example.com">
+    </div>
+    <div>
+      <label for="password">Пароль</label>
+      <input class="login-icon-password" id="password" type="password" name="password" placeholder="********">
+    </div>
+    <div class="login-help">
+      <label class="login-checkbox"><input type="checkbox" name="remember">Запомните меня</label>
+      <a class="restore" href="blank.html">Я забыл пароль!</a>
+    </div>
+    <button class="button" type="submit">Войти</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
 </section>
 
 </body>
