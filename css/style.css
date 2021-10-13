@@ -230,6 +230,42 @@ img {
   color: var(--special);
 }
 
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: var(--basic-extra-light);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+.catalog-item-title {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.catalog-item-price b {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: var(--basic-neutral);
+}
+
+.catalog-item-price .button {
+  line-height: 20px;
+  color: var(--basic-white);
+}
 
 /* Main footer */
 
