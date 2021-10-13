@@ -55,6 +55,12 @@ img {
   height: auto;
 }
 
+/* Main header */
+
+.inner-page .main-header {
+  background-color: var(--basic-black);
+}
+
 /* Main navigation */
 
 .main-navigation {
