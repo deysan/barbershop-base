@@ -75,3 +75,17 @@ img {
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-black);
 }
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-extra-dark);
+}
