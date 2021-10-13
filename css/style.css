@@ -332,6 +332,30 @@ img {
   list-style: none;
 }
 
+/* Price */
+
+.price-list {
+  list-style: none;
+}
+
+.price-list a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.price-table {
+  border-collapse: collapse;
+}
+
+.price-table td {
+  border: 2px solid #000;
+}
+
+.price-table td:last-child {
+  text-align: center;
+}
+
+
 /* Main footer */
 
 .main-footer {
