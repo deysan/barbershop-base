@@ -132,3 +132,28 @@ img {
   background-color: var(--basic-dark);
   border: 7px solid var(--basic-white);
 }
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-black);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--special);
+}
+
+.button.disabled,
+.button:disabled {
+  background-color: var(--basic-black);
+  cursor: default;
+  opacity: 0.5;
+}
