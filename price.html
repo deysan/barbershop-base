@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Прайс-лист — Барбершоп "Бородинский"</title>
@@ -8,39 +8,39 @@
   <link rel="apple-touch-icon" href="img/favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body>
+<body class="page-body">
 
-<header>
-  <nav>
-    <a href="index.html">
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo" href="index.html">
       <img src="img/logo-index.svg" width="371" height="155" alt="Логотип барбершопа Бородинский">
     </a>
-    <ul>
+    <ul class="site-navigation">
       <li><a href="blank.html">Информация</a></li>
       <li><a href="blank.html">Новости</a></li>
-      <li><a>Прайс-лист</a></li>
+      <li class="site-navigation-current"><a>Прайс-лист</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
-    <a href="blank.html">Вход</a>
+    <a class="login-link" href="blank.html">Вход</a>
   </nav>
 </header>
 
-<main>
+<main class="page-price container">
   <div>
-    <h1>Прайс-лист</h1>
-    <ul>
+    <h1 class="page-title">Прайс-лист</h1>
+    <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
-      <li>Прайс-лист</li>
+      <li class="breadcrumbs-current">Прайс-лист</li>
     </ul>
   </div>
 
-  <section>
+  <section class="price">
     <h2>Истинно мужская классика</h2>
 
-    <div>
+    <div class="price-goods">
       <h2>Мы используем только<br> лучшие средства:</h2>
-      <ul>
+      <ul class="price-list">
         <li>Baxter of California</li>
         <li>Mr Natty</li>
         <li>Suavecito</li>
@@ -48,9 +48,9 @@
       </ul>
     </div>
 
-    <div>
+    <div class="price-services">
       <h2>Цены на услуги<br> наших мастеров:</h2>
-      <table>
+      <table class="price-table">
         <tr>
           <td>Стрижка</td>
           <td>1500 ₽</td>
@@ -66,7 +66,7 @@
       </table>
     </div>
 
-    <div>
+    <div class="barbershop-info">
       <h3>Несколько слов о нас:</h3>
       <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
       <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
@@ -74,53 +74,53 @@
   </section>
 </main>
 
-<footer>
-  <section>
+<footer class="main-footer">
+  <section class="footer-contacts">
     <h2>Как нас найти</h2>
     <p>
       Барбершоп "Бородинский"<br>
       Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a href="contacts.html">Как нас найти?</a><br>
-      Телефон: <a href="tel:+78126660266">+7 (812) 666-02-66</a>
+      <a class="footer-address" href="contacts.html">Как нас найти?</a><br>
+      Телефон: <a class="footer-phone" href="tel:+78126660266">+7 (812) 666-02-66</a>
     </p>
   </section>
 
-  <section>
+  <section class="footer-social">
     <h2>Давайте дружить!</h2>
     <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
     </ul>
   </section>
 
-  <section>
+  <section class="footer-copyright">
     <p>
       Разработано:
-      <a href="https://htmlacademy.ru/profile/deysan/certificates">HTML Academy</a>
+      <a class="button" href="https://htmlacademy.ru/profile/deysan/certificates">HTML Academy</a>
     </p>
   </section>
 </footer>
 
-<section>
+<section class="modal modal-login">
   <h2>Личный кабинет</h2>
-  <p>Введите, пожалуйста, свой логин и пароль</p>
-  <form action="https://echo.htmlacademy.ru" method="post">
+  <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <div>
       <label for="login">Логин</label>
-      <input id="login" type="email" name="login" placeholder="email@example.com">
+      <input class="login-icon-user" id="login" type="email" name="login" placeholder="email@example.com">
     </div>
     <div>
       <label for="password">Пароль</label>
-      <input id="password" type="password" name="password" placeholder="********">
+      <input class="login-icon-password" id="password" type="password" name="password" placeholder="********">
     </div>
-    <div>
-      <label><input type="checkbox" name="remember">Запомните меня</label>
-      <a href="blank.html">Я забыл пароль!</a>
+    <div class="login-help">
+      <label class="login-checkbox"><input type="checkbox" name="remember">Запомните меня</label>
+      <a class="restore" href="blank.html">Я забыл пароль!</a>
     </div>
-    <button type="submit">Войти</button>
+    <button class="button" type="submit">Войти</button>
   </form>
-  <button type="button">Закрыть</button>
+  <button class="modal-close" type="button">Закрыть</button>
 </section>
 
 </body>
