@@ -187,7 +187,9 @@ img {
 .inner-page {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  background-image: none;
+  background-image: url("../img/pattern-light.jpg");
+  background-repeat: repeat;
+  background-position: 0 0;
 }
 
 .page-title {
@@ -361,6 +363,9 @@ img {
 .main-footer {
   color: var(--basic-white);
   background-color: var(--basic-extra-dark);
+  background-image: url("../img/pattern-dark.jpg");
+  background-repeat: repeat;
+  background-position: 0 0;
 }
 
 .footer-contacts a {
@@ -407,6 +412,9 @@ img {
 .modal {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
+  background-image: url("../img/pattern-light.jpg");
+  background-repeat: repeat;
+  background-position: 0 0;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
