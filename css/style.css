@@ -141,7 +141,7 @@ img {
 .index-columns {
   color: var(--basic-black);
   background-color: var(--basic-extra-light);
-  background-image: url("../img/shape.png");
+  background-image: url("../img/shape.png"), url("../img/pattern-light.jpg");
   background-position: center, 0 0;
   background-repeat: no-repeat, repeat;
 }
