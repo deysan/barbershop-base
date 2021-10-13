@@ -212,6 +212,24 @@ img {
   color: var(--basic-dark);
 }
 
+/* Filters */
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--special);
+}
+
+
 /* Main footer */
 
 .main-footer {
