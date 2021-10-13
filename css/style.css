@@ -153,7 +153,14 @@ img {
 
 .button.disabled,
 .button:disabled {
-  background-color: var(--basic-black);
   cursor: default;
   opacity: 0.5;
+  background-color: var(--basic-black);
 }
+
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+
