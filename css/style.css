@@ -66,6 +66,9 @@ img {
 /* Button */
 
 .button {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 30px;
   font: inherit;
   text-align: center;
   color: var(--basic-white);
@@ -180,6 +183,7 @@ img {
 /* User navigation */
 
 .user-navigation {
+  padding-left: 30px;
 }
 
 .site-navigation a,
@@ -236,8 +240,16 @@ img {
 }
 
 .index-columns h2 {
+  margin: 0 0 25px;
   font-size: 30px;
   line-height: 42px;
+}
+
+/* Inner columns */
+
+.inner-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /* News */
@@ -247,6 +259,14 @@ img {
 
 .news-list {
   list-style: none;
+}
+
+.news-item {
+  margin-bottom: 25px;
+}
+
+.news-item p {
+  margin: 0;
 }
 
 /* Gallery */
@@ -314,20 +334,29 @@ img {
   color: var(--basic-dark);
 }
 
-/* Filters */
+/* Filter */
 
-.filters {
+.filter {
   margin-right: 5px;
 }
 
+.filter fieldset {
+  margin: 0 0 50px;
+  padding: 0;
+  border: none;
+}
+
 .filter legend {
+  margin-bottom: 25px;
   font-size: 24px;
   line-height: 30px;
 }
 
-.filter ul {
-  list-style: none;
+.filter-list {
+  margin: 0;
+  padding: 0;
   line-height: 18px;
+  list-style: none;
 }
 
 .filter-input-checkbox:hover + label,
@@ -342,12 +371,24 @@ img {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 25px;
+  padding: 0;
   list-style: none;
 }
 
 .catalog-item {
+  width: 220px;
+  min-height: 285px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   background-color: var(--basic-extra-light);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item a {
@@ -355,18 +396,33 @@ img {
 }
 
 .catalog-item-title {
+  margin: 15px;
   font-size: 14px;
   line-height: 18px;
 }
 
 .catalog-category {
+  display: block;
   text-transform: none;
 }
 
-.catalog-item-price b {
+.catalog-item-image {
+  width: 220px;
+  height: 165px;
+  margin: 0;
+}
+
+.catalog-item-price {
+  display: flex;
+  padding: 15px;
+}
+
+.catalog-item-price span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
   background-color: var(--basic-neutral);
 }
 
@@ -440,13 +496,23 @@ img {
 }
 
 .product-price {
+  display: flex;
+  height: 40px;
   margin-bottom: 60px;
 }
 
 .product-price span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
   line-height: 20px;
-  text-align: center;
   background-color: var(--basic-neutral);
+}
+
+.product-price .button {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .product-info h3 {
