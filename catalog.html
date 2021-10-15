@@ -42,12 +42,12 @@
     <li class="breadcrumbs-current">Средства для ухода</li>
   </ul>
 
-  <section class="filters">
+  <section class="filter">
     <h2>Фильтр товаров</h2>
     <form class="filter" action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
         <legend>Производители:</legend>
-        <ul>
+        <ul class="filter-list">
           <li class="filter-checkbox">
             <input class="filter-input-checkbox" type="checkbox" name="baxter-of-california" id="baxter-of-california"
                    checked>
@@ -77,7 +77,7 @@
       </fieldset>
       <fieldset>
         <legend>Группы товаров:</legend>
-        <ul>
+        <ul class="filter-list">
           <li class="filter-radio">
             <input type="radio" name="product-group" value="shaving" id="filter-shave">
             <label for="filter-shave">Бритвенные принадлежности</label>
@@ -221,26 +221,26 @@
   </div>
 </footer>
 
-<section class="modal modal-login">
-  <h2>Личный кабинет</h2>
-  <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>
-  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    <div>
-      <label for="login">Логин</label>
-      <input class="login-icon-user" id="login" type="email" name="login" placeholder="email@example.com">
-    </div>
-    <div>
-      <label for="password">Пароль</label>
-      <input class="login-icon-password" id="password" type="password" name="password" placeholder="********">
-    </div>
-    <div class="login-help">
-      <label class="login-checkbox"><input type="checkbox" name="remember">Запомните меня</label>
-      <a class="restore" href="blank.html">Я забыл пароль!</a>
-    </div>
-    <button class="button" type="submit">Войти</button>
-  </form>
-  <button class="modal-close" type="button">Закрыть</button>
-</section>
+<!--<section class="modal modal-login">-->
+<!--  <h2>Личный кабинет</h2>-->
+<!--  <p class="modal-description">Введите, пожалуйста, свой логин и пароль</p>-->
+<!--  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">-->
+<!--    <div>-->
+<!--      <label for="login">Логин</label>-->
+<!--      <input class="login-icon-user" id="login" type="email" name="login" placeholder="email@example.com">-->
+<!--    </div>-->
+<!--    <div>-->
+<!--      <label for="password">Пароль</label>-->
+<!--      <input class="login-icon-password" id="password" type="password" name="password" placeholder="********">-->
+<!--    </div>-->
+<!--    <div class="login-help">-->
+<!--      <label class="login-checkbox"><input type="checkbox" name="remember">Запомните меня</label>-->
+<!--      <a class="restore" href="blank.html">Я забыл пароль!</a>-->
+<!--    </div>-->
+<!--    <button class="button" type="submit">Войти</button>-->
+<!--  </form>-->
+<!--  <button class="modal-close" type="button">Закрыть</button>-->
+<!--</section>-->
 
 </body>
 </html>
