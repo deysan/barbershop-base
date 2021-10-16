@@ -23,7 +23,7 @@
   --basic-extra-light: #f8f5f2;
   --basic-neutral: #e5e5e5;
   --basic-white: #ffffff;
-  --special: #663d15;
+  --special-color: #663d15;
 }
 
 /* Global */
@@ -95,7 +95,7 @@ img {
 .button:hover,
 .button:focus,
 .button:active {
-  background-color: var(--special);
+  background-color: var(--special-color);
 }
 
 .button.disabled,
@@ -419,7 +419,7 @@ img {
 }
 
 .appointment-item input:focus {
-  border-color: var(--special);
+  border-color: var(--special-color);
 }
 
 .appointment-form button {
@@ -534,8 +534,8 @@ img {
 }
 
 .filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
-  color: var(--special);
+.filter-input-radio:hover + label {
+  color: var(--special-color);
 }
 
 .filter-input-checkbox + label::before {
@@ -631,6 +631,8 @@ img {
   width: 220px;
   height: 165px;
   margin: 0;
+  object-fit: contain;
+  background-color: var(--basic-extra-light);
 }
 
 .catalog-item-price {
@@ -681,7 +683,7 @@ img {
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
-  background-color: var(--special);
+  background-color: var(--special-color);
 }
 
 .pagination-item-current a,
@@ -1091,7 +1093,7 @@ img {
 }
 
 .login-form input:focus {
-  border-color: var(--special);
+  border-color: var(--special-color);
 }
 
 .login-icon-user {
