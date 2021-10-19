@@ -604,6 +604,7 @@ img {
 
 .appointment-item input:focus {
   border-color: var(--special-color);
+  outline: thin dotted;
 }
 
 .appointment-form button {
@@ -699,6 +700,25 @@ img {
   height: 8px;
   background-color: var(--basic-black);
   border-radius: 50%;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: var(--special-color);
+}
+
+.filter-input:focus + label::before {
+  border-color: var(--special-color);
+  outline: thin dotted;
+}
+
+.filter-input:disabled + label,
+.filter-input:checked:disabled + label,
+.filter-input:disabled:hover + label,
+.filter-input:disabled:focus + label {
+  color: var(--basic-black);
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 /* Catalog */
@@ -1088,8 +1108,15 @@ img {
   margin: 0 0 10px;
 }
 
+.login-form p {
+  margin: 0 0 10px;
+}
+
 .login-form input[type="email"],
 .login-form input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px 40px 10px 15px;
   font: inherit;
   color: var(--basic-black);
   text-transform: uppercase;
@@ -1099,18 +1126,77 @@ img {
 
 .login-form input:focus {
   border-color: var(--special-color);
+  outline: thin dotted;
+}
+
+.login-form .login-help {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
 }
 
 .login-icon-user {
   background-image: url("../img/user.svg");
   background-position: 270px center;
+  background-size: 13px;
   background-repeat: no-repeat;
 }
 
 .login-icon-password {
   background-image: url("../img/lock.svg");
   background-position: 270px center;
+  background-size: 13px;
   background-repeat: no-repeat;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: var(--special-color);
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid var(--basic-black);
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: var(--special-color);
+  outline: thin dotted;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: var(--basic-black);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.login-form .button {
+  width: 100%;
+  margin-right: 0;
 }
 
 .restore {
