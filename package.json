@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Вёрстка базовой версии проекта \"Барбершоп\" от HTML Academy https://deysan.github.io/barbershop-base/",
   "main": "index.js",
-  "dependencies": {
+  "devDependencies": {
     "gh-pages": "^3.2.3"
   },
-  "devDependencies": {},
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
